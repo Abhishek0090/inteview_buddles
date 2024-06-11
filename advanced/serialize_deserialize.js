@@ -14,7 +14,7 @@ function serialize(root) {
   while (queue.length) {
     const node = queue.shift();
     if (!node) {
-      result += "null ";
+      result += "null";
     } else {
       result += node.val + " ";
       queue.push(node.left);
